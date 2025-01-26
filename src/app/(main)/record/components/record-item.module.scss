@@ -1,0 +1,148 @@
+.task_container {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 188px;
+  background: #FFFFFF;
+  border-radius: 8px 8px 8px 8px;
+  border: 2px solid #E0E2E7;
+  margin-bottom: 15px;
+
+  &:hover {
+    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.25);
+    border-radius: 8px 8px 8px 8px;
+    border: 2px solid #E0E2E7;
+    position:relative;
+    top: -1px;
+  }
+
+  @mixin task_text {
+    color: #4B5157;
+    font-size: small;
+    text-align: center;
+    width: 10vw;
+  }
+
+  .task_image {
+    box-sizing: border-box;
+    width: 132px;
+    height: 132px;
+    background: #EEEEF0;
+    padding: 34px;
+    margin: {
+      left: 40px;
+      right: 29px;
+    }
+  }
+
+  .text_area {
+    flex-basis: 300px;
+    flex-grow: 1;
+    height: 132px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    .title_line {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .task_title {
+        font-size: 18px;
+        color: #172B4D;
+        line-height: 18px;
+        text-align: left;
+        font-style: normal;
+        font-weight: bolder;
+        margin-right: 20px;
+      }
+
+      .task_type {
+        width: 115px;
+        height: 31px;
+        line-height: 31px;
+        border-radius: 38px 38px 38px 38px;
+        border: 2px solid #96BB7C;
+        font-weight: 400;
+        font-size: 16px;
+        color: #96BB7C;
+        text-align: center;
+        font-style: normal;
+        text-transform: none;
+      }
+    }
+
+    .space {
+      flex-basis: 10px;
+      flex-grow: 1;
+    }
+
+    .task_content {
+      margin-top: 8px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      color: #9A9A9A;
+      font-size: 16px;
+      line-height: 27px;
+    }
+
+    .task_part {
+      width: 85px;
+      height: 27px;
+      text-align: center;
+      line-height: 27px;
+      font-size: 16px;
+      color: #2A4D8A;
+      font-weight: bold;
+      font-style: normal;
+      background: #EBECF0;
+      text-decoration: none;
+      text-transform: capitalize;
+      border-radius: 0 14px 14px 14px;
+    }
+  }
+
+  .info_line {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    height: 132px;
+    margin-right: 30px;
+
+    .task_score {
+      font-weight: 400;
+      font-size: 40px;
+      color: #172B4D;
+      line-height: 27px;
+      font-style: normal;
+    }
+
+    .task_date {
+      font-weight: 400;
+      font-size: 16px;
+      color: #8993A4;
+      line-height: 27px;
+      text-align: left;
+      font-style: normal;
+    }
+  }
+
+
+  .dummy_icon {
+    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 2px solid #BEBEBE;
+    color: #1e1f22
+  }
+}

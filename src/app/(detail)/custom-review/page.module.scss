@@ -1,0 +1,117 @@
+@use "../../globals";
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #EEEEF0;
+  padding: 26px 120px;
+  min-height: calc(100vh - 130px);
+
+  .question_area {
+    height: 130px;
+    background: #FFFFFF;
+    border-radius: 8px 8px 8px 8px;
+    padding: 26px;
+
+    .question_level {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .question_detail {
+      font-weight: 400;
+      font-size: 16px;
+      color: #172B4D;
+      line-height: 27px;
+      text-align: left;
+      font-style: normal;
+      text-transform: none;
+    }
+  }
+
+  .content_area {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    .answer_area {
+      flex-grow: 1;
+      margin-top: 20px;
+      width: 1350px;
+      display: flex;
+      flex-direction: column;
+
+      .options_line{
+        display: flex;
+        flex-direction: row;
+        .answer_literal {
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+          font-size: 18px;
+          color: #172B4D;
+          margin-right: 26px;
+          &::before {
+            content: "";
+            display: inline-block;
+            margin-right: 12px;
+            width: 10px;
+            height: 33px;
+            background: #96BB7C;
+            border-radius: 10px 10px 10px 10px;
+          }
+        }
+      }
+      .answer_detail {
+        flex-grow: 1;
+        margin-top: 16px;
+        overflow-y: auto;
+        line-height: 20px;
+        background: #FFFFFF;
+        border-radius: 8px 8px 8px 8px;
+        border: none;
+        outline: none;
+        padding: 16px;
+        font-size: 16px;
+        color: #172B4D;
+          & :global(.answer_content_error) {
+            color:#E34F48
+          }
+
+          & :global(.answer_content_warn) {
+            color:#F18F46
+          }
+
+          & :global(.answer_content_tips) {
+            color:#68ba5b
+          }
+        }
+    }
+  }
+  .comments_area{
+    flex-grow: 1;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    .review_literal{
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+      color: #172B4D;
+      margin-bottom: 16px;
+      &::before {
+        content: "";
+        display: inline-block;
+        margin-right: 12px;
+        width: 10px;
+        height: 33px;
+        background: #96BB7C;
+        border-radius: 10px 10px 10px 10px;
+      }
+    }
+
+
+  }
+}

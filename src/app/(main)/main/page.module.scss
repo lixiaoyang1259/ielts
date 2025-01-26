@@ -1,0 +1,312 @@
+@mixin line {
+  margin-top: 70px;
+  padding: 0 79px;
+  display: flex;
+  flex-direction: row;
+}
+
+.main_container {
+  width: 1440px;
+  position: relative;
+  margin: 5px auto;
+
+  .line1_block {
+    @include line;
+
+    .line1_left_part {
+      display: flex;
+      flex-direction: column;
+      width: 676px;
+      flex-shrink: 0;
+      z-index: 10;
+
+      .line1_left_logo {
+        margin-top: 37px;
+      }
+
+      .line1_left_T1 {
+        font-weight: bold;
+        font-size: 54px;
+        color: #172B4D;
+        line-height: 62px;
+        text-align: left;
+        font-style: normal;
+        text-transform: none;
+        margin-top: 11px;
+      }
+
+      .line1_left_T2 {
+        margin-top: 24px;
+        font-weight: 400;
+        font-size: 36px;
+        color: #828282;
+        line-height: 28px;
+        text-align: left;
+        font-style: normal;
+        text-transform: none;
+      }
+
+      .line1_left_T3 {
+        margin-top: 24px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #172B4D;
+        line-height: 20px;
+        text-align: left;
+        font-style: normal;
+        text-transform: none;
+      }
+
+      .line1_left_button {
+        text-decoration: none;
+        margin-top: 24px;
+        background: #96BB7C;
+        border-radius: 50px 50px 50px 50px;
+        border: 1px solid #96BB7C;
+        width: 280px;
+        height: 70px;
+        font-weight: bold;
+        font-size: 20px;
+        color: #FFFFFF;
+        line-height: 70px;
+        text-align: center;
+
+        &:hover {
+          background: #7BAB5A;
+        }
+      }
+    }
+
+    .line1_right_part {
+    }
+  }
+
+  .line2_title {
+    margin-top: 110px;
+    font-weight: bold;
+    font-size: 48px;
+    color: #172B4D;
+    line-height: 62px;
+    text-align: center;
+    font-style: normal;
+    text-transform: none;
+  }
+
+  .line2_block {
+    @include line;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    @mixin line_title {
+      font-weight: bold;
+      font-size: 24px;
+      color: #172B4D;
+      line-height: 28px;
+      text-align: left;
+      font-style: normal;
+    }
+    @mixin line_text {
+      margin-top: 35px;
+      font-size: 20px;
+      color: #172B4D;
+      line-height: 28px;
+      text-align: left;
+      & li {
+        white-space: pre-wrap;
+        word-break: manual;
+      }
+    }
+
+    @mixin line2_block {
+      background: linear-gradient(180deg, #FFFFFF 50%, #EFF8E8 100%);
+      box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.09);
+      border-radius: 8px 8px 8px 8px;
+      border: 2px solid #E0E2E7;
+      padding: 49px 49px 0 49px;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 625px;
+      flex-grow: 1;
+      height: 100%;
+    }
+    @mixin line2_icon {
+      width: 230px;
+      height: 203px;
+      align-self: flex-end;
+      justify-self: flex-end;
+      position: relative;
+      top: 20px;
+      left: 50px;
+    }
+
+    .line2_left_block {
+      @include line2_block;
+
+      .line2_left_title {
+        @include line_title;
+      }
+
+      .line2_left_text {
+        @include line_text;
+
+      }
+
+      .line2_left_icon {
+        @include line2_icon
+      }
+    }
+
+    .spacer {
+      width: 31px;
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
+
+    .line2_right_block {
+      @include line2_block();
+
+      .line2_right_title {
+        @include line_title;
+      }
+
+      .line2_right_text {
+        @include line_text;
+      }
+
+      .line2_right_icon {
+        @include line2_icon
+      }
+    }
+  }
+
+  .line3_block {
+    @include line;
+
+    .line3_left_block {
+      width: 479px;
+      height: 565px;
+      margin-right: 129px;
+    }
+
+    .line3_right_block {
+      margin-top: 14px;
+      margin-left: 40px;
+      display: flex;
+      flex-direction: column;
+
+      .line3_right_title {
+        font-weight: bold;
+        font-size: 48px;
+        color: #201C44;
+        line-height: 58px;
+        text-align: left;
+        font-style: normal;
+      }
+
+      @mixin demo {
+        margin-top: 30px;
+        background: #FDF9C9;
+        box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.09);
+        border-radius: 8px 8px 8px 8px;
+        border: 1px solid #C2C2C2;
+        padding: 28px 37px 10px 37px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & span {
+          font-weight: bold;
+          line-height: 28px;
+        }
+      }
+
+      .line3_right_demo1 {
+        @include demo;
+      }
+
+      .line3_right_demo2 {
+        @include demo;
+      }
+    }
+
+  }
+
+  .line4_main_title {
+    margin-top: 110px;
+    font-weight: bold;
+    font-size: 48px;
+    color: #172B4D;
+    line-height: 62px;
+    text-align: center;
+    font-style: normal;
+    text-transform: none;
+  }
+
+  .line4_block {
+    @include line;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @mixin base_block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 380px;
+      & > img {
+        width: 120px;
+        height: 120px;
+      }
+      .line4_title {
+        margin-top: 16px;
+        font-weight: bold;
+        font-size: 24px;
+        color: #172B4D;
+        text-align: center;
+        font-style: normal;
+      }
+      .line4_content {
+        margin-top: 20px;
+        font-size: 20px;
+        color: #172B4D;
+        line-height: 28px;
+        text-align: center;
+        font-style: normal;
+      }
+    }
+
+    .line4_left_block {
+      @include base_block;
+
+    }
+
+    .line4_middle_block {
+      @include base_block;
+    }
+
+    .line4_right_block {
+      @include base_block;
+    }
+  }
+
+  .space_line {
+    margin-top: 110px;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #909090;
+  }
+
+  .about_block {
+    margin-top: 26px;
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+
+    .about_icon {
+      width: 25px;
+      height: 20px;
+      margin-right: 20px;
+    }
+  }
+}

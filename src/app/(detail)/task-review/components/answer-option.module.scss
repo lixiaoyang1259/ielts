@@ -1,0 +1,26 @@
+.submit_button {
+  background: #96BB7C;
+  border-radius: 5px 5px 5px 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-style: normal;
+  width: 136px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 26px;
+
+  &::after{
+    content: "";
+    display: inline-block;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    background-image: url("/points.png");
+    background-size: cover;
+  }
+}

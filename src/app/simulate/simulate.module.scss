@@ -1,0 +1,176 @@
+
+.main_container {
+  display: grid;
+  grid-template-rows: 60px 100px repeat(9, 1fr) 100px;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+  grid-row-gap: 15px;
+}
+
+.header_area {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 20px;
+  background: #e3c0c3;
+  border-bottom: 1px solid black;
+
+  .header_info {
+    margin-left: 28px;
+    font-weight: bold;
+    flex-grow: 1;
+
+    .user_info {
+
+    }
+
+    .timer {
+
+    }
+  }
+
+  .submit_button {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 20px;
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .wifi_icon {
+    margin-right: 20px;
+  }
+
+  .bell_icon {
+    margin-right: 20px;
+  }
+
+  .menu_icon {
+    margin-right: 20px;
+  }
+
+  .note_icon {
+    & > path {
+      fill: black;
+    }
+
+    margin-right: 20px;
+  }
+}
+
+.title_area {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 30px;
+  padding: 5px 15px;
+
+  .part1_literal {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+
+  .part1_require {
+    line-height: 40px;
+  }
+}
+
+.question_area {
+  margin: 0 30px;
+  grid-column: 1;
+  grid-row: 3 / 12;
+
+  .question {
+    white-space: pre-wrap;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .diagram {
+    margin-top: 20px;
+    //TODO:
+  }
+}
+
+.answer_area {
+  grid-column: 2;
+  grid-row: 3 / 12;
+  margin-right: 50px;
+  padding-left: 25px;
+  border-left: 2px solid black;
+
+  .answer {
+    height: calc(100% - 30px);
+    width: 100%;
+    resize: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+%arrow_icon {
+  width: 45px;
+  height: 45px;
+  padding: 8px;
+  background: black;
+  border-radius: 5%;
+
+  & > path {
+    stroke: white;
+    stroke-width: 3px;
+  }
+}
+
+.arrow_icon_disable {
+  background: gray;
+}
+
+.footer_area {
+  grid-column: 1 / 3;
+  grid-row: 12;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  padding-right: 30px;
+
+  .footer_part1_btn {
+    padding-left: 15px;
+    flex-grow: 1;
+  }
+  .footer_part_literal{
+    border-top: 3px solid #e2dfdf;
+    height: 45px;
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .footer_part2_btn {
+    flex-grow: 1;
+  }
+
+  .switch_btn_group {
+    position: absolute;
+    right: 30px;
+
+    .switch_left_btn {
+      @extend %arrow_icon;
+      margin-right: 5px;
+    }
+
+    .switch_right_btn {
+      @extend %arrow_icon;
+      transform: rotate(180deg);
+    }
+  }
+}

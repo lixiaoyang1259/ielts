@@ -1,0 +1,4 @@
+$header_height: 60px;
+$margin_to_header: 60px;
+$_margin_to_footer: 60px;
+$content_min_height : calc(100vh - $margin_to_header - $margin_to_header - $_margin_to_footer)

@@ -1,0 +1,152 @@
+{
+  "LoginPage": {
+    "login_welcome": "Welcome",
+    "password_format": "Password must be at least 6 characters",
+    "forgot_password": "No account or forgot your password?",
+    "sign_in": "Sign In",
+    "common_login_error": "An error occurred during login. Please try again later.",
+    "email_existed": "This email address is already registered through another method. Please use a different login method.",
+    "access_denied_g": "There was an issue with Google One-Tap login. Please try again later.",
+    "access_denied_h": "There was an issue with GitHub One-Tap login. Please try again later.",
+    "access_denied_c": "There was an issue with {provider} One-Tap login. Please try again later."
+  },
+  "RegisterPage": {
+    "register_now": "Register",
+    "continue": "Continue",
+    "verify_mail_notice": "If this email is registered, you will enter the password recovery process"
+  },
+  "ConfirmPage": {
+    "email_notice": "A verification email has been sent. Please check your inbox. If you haven't received it, check all folders, including spam.",
+    "count_down": "Returning to the homepage in {count} seconds"
+  },
+  "PasswordPage": {
+    "set_password": "Please set a password",
+    "first_password": "Password",
+    "second_password": "Re-enter Password",
+    "continue": "Continue",
+    "input_your_password": "Please enter a password",
+    "password_format": "Password must be 6-20 characters",
+    "finished": "Almost done with registration",
+    "different_password": "Passwords do not match",
+    "code_or_link_error": "Verification code expired, please restart the registration process",
+    "common_password_error": "Password setup error, please try again later"
+  },
+  "MainMenu": {
+    "main": "Home",
+    "ielts": "IELTS Tests",
+    "records": "History",
+    "custom": "Custom Tests",
+    "contact": "Contact Us",
+    "remaining_points": "Available Points",
+    "logout": "Log Out"
+  },
+  "MainPage": {
+    "promotion_info": "AI scoring with real-time feedback to improve your English writing skills. During public testing, log in to get scoring points worth 19.9 USD for free",
+    "get_point": "Get Points Now",
+    "username_placeholder": "Login",
+    "signup": "Sign Up",
+    "left_T1": "Advanced English Writing Check Tool",
+    "left_T2": "Academic and General",
+    "left_T3": "Use our professional AI engine to receive instant, detailed, high-quality feedback and performance assessments on your writing.",
+    "left_start_button": "Start Free",
+    "line2_title": "Who Can Benefit from Our Platform?",
+    "left_title": "Students and Professionals",
+    "line2_left_text_li1": "Graduates from countries like South Korea, Thailand, China, Vietnam, aiming to pursue further studies in the US, UK, Canada, Australia, etc.",
+    "line2_left_text_li2": "Job seekers and professionals looking to work in English-speaking countries or improve their career prospects.",
+    "line2_right_title": "Teachers and Institutions",
+    "line2_right_text_li1": "School English teachers and IELTS instructors who want to provide students with advanced self-assessment and learning tools.",
+    "line2_right_text_li2": "Language schools and other educational organizations aiming to enhance English writing teaching efficiency and upgrade their English curriculum.",
+    "line3_right_title": "User Reviews",
+    "line3_right_demo1": "Thanks to this site’s AI writing coach, my IELTS writing score improved from 5.0 to 6.0! Each submission provided detailed feedback and suggestions, helping me identify weaknesses and progress quickly!",
+    "line3_right_name1": "- Nguyễn Thị Linh, IELTS Candidate",
+    "line3_right_demo2": "This site is fantastic! The AI not only provides accurate scoring but also personalized improvement tips. After a few weeks, my writing skills and vocabulary have significantly improved. Highly recommended for IELTS prep!",
+    "line3_right_name2": "- Aisyah Binti Ahmad, IELTS Candidate",
+    "line4_main_title": "Why Choose Us?",
+    "line4_left_title": "Understand Your Score",
+    "line4_left_content": "Realistic score estimates based on official scoring standards: Grammar, Task Achievement, Coherence, and Vocabulary Range.",
+    "line4_middle_title": "Detailed Feedback",
+    "line4_middle_content": "Comprehensive feedback on your writing. Our AI algorithm evaluates your response for accuracy and coherence, as seen through an IELTS examiner’s lens.",
+    "line4_right_title": "Free Practice Opportunities",
+    "line4_right_content": "Practice daily and track your progress on the dashboard. Enjoy ultimate IELTS essay scoring anytime, anywhere, 24/7."
+  },
+  "IeltsPage": {
+    "tasks": "Tests",
+    "no_task": "No available tasks under current conditions, please adjust the filter and try again"
+  },
+  "TaskFilter": {
+    "type": "Type",
+    "part": "Part",
+    "academic": "Academic",
+    "general": "General",
+    "part1": "Part 1",
+    "part2": "Part 2",
+    "submit": "Submit"
+  },
+  "RecordPage": {
+    "record": "Record",
+    "average_score": "Recent Average",
+    "exceptions": "An error occurred, please try again later",
+    "no_record": "No test history yet, select one from the task list to start."
+  },
+  "TaskDetail": {
+    "start": "Start",
+    "input_hint": "Suggested response length is at least {words} words"
+  },
+  "EssayOptions": {
+    "save": "Save",
+    "save_title": "Confirm Save",
+    "save_content": "Stop answering and save the response. You can submit for scoring from the history page later.",
+    "submit": "Submit",
+    "submit_title": "Confirm Submission",
+    "submit_content": "Submit to get scoring results, will cost 1 point. You currently have {points} points.",
+    "insufficient_point_title": "Insufficient Points",
+    "insufficient_point_content": "Not enough points remaining, please add points",
+    "confirm_cancel": "Cancel",
+    "confirm_ok": "Confirm",
+    "ocr_button": "OCR",
+    "select_ok": "Confirm",
+    "ocr_title": "Select Image",
+    "ocr_content": "Image format must be PNG/JPG and under 2MB. Using OCR costs 1 point, you currently have {points} points.",
+    "select_cancel": "Cancel",
+    "no_file_select": "No file selected",
+    "ocr_error": "Text recognition failed, please try a clearer file"
+  },
+  "SubmitOptions": {
+    "too_short": "Response is too short",
+    "too_long": "Response is too long",
+    "auth_fail": "Authentication failed, please log in and try again",
+    "db_fail": "Database error, please report if it persists",
+    "ai_fail": "Model error, please report if it persists",
+    "too_many_requests": "Too many requests in a short time, please try again later",
+    "no_level_selected": "Please select a scoring level",
+    "custom_question_error": "Input question is too short or too long",
+    "no_enough_points": "Not enough points remaining",
+    "no_image_selected": "Please select a valid image file",
+    "too_big_image": "File size is too large",
+    "upload_image_fail": "Image upload failed, please try again later",
+    "common": "An error occurred, please try again later"
+  },
+  "TaskReview": {
+    "answer_literal": "Answer",
+    "review_data_error": "Data error, please contact us if this persists"
+  },
+  "LoginNotify": {
+    "login_notice": "This feature requires login",
+    "jump_notice": "Automatically returning to the homepage in {time} seconds"
+  },
+  "ContactPage": {
+    "commit_success": "Submission successful, thank you for your feedback",
+    "suggest": "Feedback",
+    "send": "Submit",
+    "mail_notice": "or email us at"
+  },
+  "CustomPage": {
+    "unknown_error": "Unknown error, please try again later",
+    "create": "Create New",
+    "record": "Record",
+    "no_record": "No response history yet, create a new question now",
+    "select_level": "Please select a level"
+  },
+  "CustomReviewPage": {
+  }
+}

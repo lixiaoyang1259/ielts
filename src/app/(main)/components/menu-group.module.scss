@@ -1,0 +1,42 @@
+.menu_group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  user-select: none;
+  flex-grow: 1;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+//.menu_group:before{
+//  content: "";
+//  border-right: 1px solid #EEEEEE;
+//  height: 30px;
+//  margin-right: 40px;
+//  margin-left: 20px;
+//}
+
+  .menu_item_name {
+    color: #172B4D;
+    font-size: 18px;
+    margin-right: 30px;
+    text-align: center;
+    &:hover{
+      font-weight: normal;
+      color: #96BB7C;
+    }
+  }
+
+  .input_radio:checked + label {
+    color: #96BB7C;
+    font-size: 18px;
+    font-weight: bold;
+    user-select: none;
+    line-height: 50px;
+    text-align: center;
+    border: rgb(0, 0 , 0, 0) solid 5px;
+    border-bottom: #96BB7C solid 5px;
+
+}

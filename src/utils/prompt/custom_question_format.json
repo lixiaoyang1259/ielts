@@ -1,0 +1,13 @@
+{
+  "score": 1,
+  "version": 1,
+  "illegal_answer": true,
+  "illegal_answer_detail": "demo",
+  "over_all_comments": "demo",
+  "suggestions" : [
+    {
+      "position": [ 1, 2 ],
+      "suggestion": "suggestion"
+    }
+  ]
+}

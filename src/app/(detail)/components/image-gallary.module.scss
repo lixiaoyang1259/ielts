@@ -1,0 +1,80 @@
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+.embla__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.embla__controls {
+  margin-top: 10px;
+}
+.embla__button {
+  background-color: transparent;
+  border : none;
+  box-shadow: inset 0 0 0 0.2rem rgba(234,234,234, 1);
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  border-radius: 50%;
+  color: #353945;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.embla__button:disabled {
+  color: rgb(192, 192, 192);
+}
+.embla__button__svg {
+  width: 75%;
+  height: 75%;
+}
+.embla__dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 18px;
+  flex-grow: 1;
+}
+.total_count{
+  color : #353945;
+  font-size: 15px;
+  flex-grow: 1;
+  text-align: center;
+}
+.embla__dot {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 13px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.embla__dot:after {
+  box-shadow: inset 0 0 0 1px rgb(234, 234, 234);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  content: '';
+}
+
+.embla__dot_selected::after{
+  box-shadow: inset 0 0 0 1px #353945;
+
+}

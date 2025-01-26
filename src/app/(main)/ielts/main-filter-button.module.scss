@@ -1,0 +1,14 @@
+.filter_container {
+  & :global(.arco-select-view) {
+    background-color: white;
+    border-radius: 3px 3px 3px 3px;
+    border: 2px solid #96BB7C;
+    & :global(.arco-tag){
+      background: #DFE6DF;
+      border-radius: 2px 2px 2px 2px;
+    }
+    & :global(.arco-input-tag-tag){
+      margin:5px 2px;
+    }
+  }
+}

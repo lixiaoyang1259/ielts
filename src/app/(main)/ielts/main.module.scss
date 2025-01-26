@@ -1,0 +1,116 @@
+$content_margin: 130px;
+.exception_notice{
+  width: 100%;
+  height: 100%;
+}
+.main_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  background-color: #EEEEF0;
+  min-height: calc(100vh - 60px);
+  padding: 0 120px;
+  .loading{
+    .skeleton_card{
+      box-sizing: border-box;
+      padding-top: 50px;
+      padding-left: 40px;
+      padding-right: 40px;
+      height: 188px;
+      width: 100%;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.25);
+      border-radius: 8px 8px 8px 8px;
+      border: 2px solid #E0E2E7;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.no_tasks {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #9F9F9F;
+}
+
+.recent_list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  .recent_list_options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: flex-start;
+    align-items: center;
+    height: 60px;
+
+    .recent_literal {
+      width: 180px;
+      font-weight: bold;
+      font-size: 16px;
+      color: #172B4D;
+      line-height: 16px;
+      text-align: left;
+      font-style: normal;
+      text-transform: none;
+
+      .recent_count {
+        margin-left: 5px;
+      }
+    }
+
+    .average_score {
+      flex-grow: 1;
+      flex-shrink: 1;
+      font-size: 18px;
+      color: #BEBEBE;
+      text-align: center;
+    }
+
+    .all_recent_button {
+      width: 180px;
+      text-align: right;
+    }
+  }
+
+  .recent_content {
+
+    @mixin header_text {
+      color: #4B5157;
+      text-align: center;
+    }
+  }
+}
+
+.question_list {
+  margin-top: 30px;
+  @extend .recent_list;
+
+  .index_container {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+
+    .index_button {
+      margin-right: 10px;
+    }
+
+    .index_button:visited {
+
+    }
+
+    .index_button_current {
+      margin-right: 10px;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,17 @@
+@use "@/app/globals";
+.main_container{
+  flex-grow: 1;
+  overflow-y: auto;
+  flex-basis: 100px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.model_answer {
+  flex-grow: 1;
+  flex-basis: 20px;
+  word-break: break-word;
+  white-space: pre-wrap;
+  overflow-y: auto;
+  @include globals.grey-border();
+}

@@ -1,0 +1,20 @@
+.menu_container{
+  min-width: 40px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 2px 2px 2px 2px #BBBBBB;
+  padding: 3px;
+  border-radius: 5px;
+
+  .menu_name{
+    margin : 0 2px;
+    color : #9a9a9a;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+  }
+}
+
+.menu_name:nth-child(n+2){
+  border-top: 1px solid #D9DADB;
+}

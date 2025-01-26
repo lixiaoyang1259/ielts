@@ -1,0 +1,152 @@
+{
+  "LoginPage": {
+    "login_welcome": "ようこそ",
+    "password_format": "パスワードは6文字以上必要です",
+    "forgot_password": "アカウントがない方またはパスワードを忘れた方はこちら",
+    "sign_in": "ログイン",
+    "common_login_error": "ログイン中にエラーが発生しました。しばらくしてからもう一度お試しください。",
+    "email_existed": "このメールアドレスはすでに他の方法で登録されています。別の方法でログインしてください。",
+    "access_denied_g": "Googleワンタップログインで問題が発生しました。しばらくしてからもう一度お試しください。",
+    "access_denied_h": "GitHubワンタップログインで問題が発生しました。しばらくしてからもう一度お試しください。",
+    "access_denied_c": "{provider}ワンタップログインで問題が発生しました。しばらくしてからもう一度お試しください。"
+  },
+  "RegisterPage": {
+    "register_now": "新規登録",
+    "continue": "続ける",
+    "verify_mail_notice": "メールアドレスが既に登録済みの場合、パスワードリセット手続きに進みます"
+  },
+  "ConfirmPage": {
+    "email_notice": "確認コードを含むメールが送信されました。メールを確認してください。受信していない場合は迷惑メールフォルダも確認してください",
+    "count_down": "{count}秒後にホームページに戻ります"
+  },
+  "PasswordPage": {
+    "set_password": "パスワードを設定してください",
+    "first_password": "パスワード",
+    "second_password": "パスワードを再入力してください",
+    "continue": "続ける",
+    "input_your_password": "パスワードを入力してください",
+    "password_format": "パスワードは6～20文字以内",
+    "finished": "登録はもうすぐ完了します",
+    "different_password": "パスワードが一致しません",
+    "code_or_link_error": "認証コードが無効です。再度登録をお試しください",
+    "common_password_error": "パスワード設定エラーが発生しました。しばらくしてから再試行してください"
+  },
+  "MainMenu": {
+    "main": "ホーム",
+    "ielts": "IELTS問題",
+    "records": "履歴",
+    "custom": "カスタム問題",
+    "contact": "お問い合わせ",
+    "remaining_points": "利用可能ポイント",
+    "logout": "ログアウト"
+  },
+  "MainPage": {
+    "promotion_info": "AIによるリアルタイムのフィードバックで英作文力を向上させます。ベータ期間中にログインすると、2000 JPY相当の無料ポイントが付与されます",
+    "get_point": "今すぐ取得",
+    "username_placeholder": "ログイン",
+    "signup": "新規登録",
+    "left_T1": "高度な英作文チェックツール",
+    "left_T2": "アカデミック・トレーニングタイプ",
+    "left_T3": "私たちのAIエンジンで、あなたの作文に即時かつ詳細なフィードバックを提供し、スキルを評価します。",
+    "left_start_button": "無料で始める",
+    "line2_title": "当プラットフォームから誰が恩恵を受けられるのか？",
+    "left_title": "学生とビジネスパーソン",
+    "line2_left_text_li1": "韓国、タイ、中国、ベトナムなどの卒業生で、米国、英国、カナダ、オーストラリアなどでの学位取得を目指す方。",
+    "line2_left_text_li2": "英語圏での仕事を目指す求職者やキャリアアップを目指す専門家。",
+    "line2_right_title": "教師および教育機関",
+    "line2_right_text_li1": "生徒に自己評価や自学ツールを提供したい英語教師やIELTS指導者。",
+    "line2_right_text_li2": "英作文指導の効率を向上させ、英語コースの質を高めたい語学学校および教育機関。",
+    "line3_right_title": "ユーザーの声",
+    "line3_right_demo1": "このサイトのAIチューターのおかげで、IELTSの作文スコアが5.0から6.0に上がりました！送信するたびに詳細なフィードバックと改善提案が得られ、自分の弱点を理解し、速やかに上達できました！",
+    "line3_right_name1": "- Nguyễn Thị Linh, IELTS受験生",
+    "line3_right_demo2": "素晴らしいサイトです！AIは正確なスコアを提供するだけでなく、個別の改善提案もしてくれます。数週間利用した結果、作文スキルと語彙が大幅に向上しました。IELTS受験者に強くお勧めします！",
+    "line3_right_name2": "- Aisyah Binti Ahmad, IELTS受験生",
+    "line4_main_title": "なぜ私たちを選ぶのか？",
+    "line4_left_title": "スコアの理解",
+    "line4_left_content": "公式スコア基準に基づく実際のスコアを算出：文法、タスク達成度、結合力と一貫性、語彙。",
+    "line4_middle_title": "詳細なフィードバック",
+    "line4_middle_content": "IELTS試験官の視点からあなたの回答の正確性と一貫性を評価する総合的なフィードバック。",
+    "line4_right_title": "無料の練習機会",
+    "line4_right_content": "毎日の練習を行い、ダッシュボードで進捗を追跡できます。24時間365日いつでも利用可能な最終IELTS作文チェックサービスをお楽しみください。"
+  },
+  "IeltsPage": {
+    "tasks": "問題",
+    "no_task": "現在の条件下で利用可能な問題はありません。フィルター設定を変更して再試行してください"
+  },
+  "TaskFilter": {
+    "type": "タイプ",
+    "part": "パート",
+    "academic": "アカデミック",
+    "general": "一般",
+    "part1": "パート1",
+    "part2": "パート2",
+    "submit": "送信"
+  },
+  "RecordPage": {
+    "record": "記録",
+    "average_score": "最近の平均スコア",
+    "exceptions": "小さなエラーが発生しました。しばらくしてから再試行してください",
+    "no_record": "現在回答記録がありません。問題リストから一つ選んで開始してください。"
+  },
+  "TaskDetail": {
+    "start": "開始",
+    "input_hint": "{words}文字以上で回答することをお勧めします"
+  },
+  "EssayOptions": {
+    "save": "保存",
+    "save_title": "保存を確認してください",
+    "save_content": "回答を中止して保存します。後で記録から添削を提出できます",
+    "submit": "提出",
+    "submit_title": "提出を確認してください",
+    "submit_content": "提出して添削結果を取得します。1ポイントが必要です。現在{points}ポイントが利用可能です",
+    "insufficient_point_title": "ポイント不足",
+    "insufficient_point_content": "提出に必要なポイントが不足しています。ポイントをチャージしてください",
+    "confirm_cancel": "キャンセル",
+    "confirm_ok": "確認",
+    "ocr_button": "OCR",
+    "select_ok": "確認",
+    "ocr_title": "画像選択",
+    "ocr_content": "画像形式はPNG/JPGでサイズは2M以内。OCR使用には1ポイント必要です。現在{points}ポイントが利用可能です",
+    "select_cancel": "キャンセル",
+    "no_file_select": "選択されたファイルがありません",
+    "ocr_error": "テキスト認識に失敗しました。より鮮明なファイルを使用してください"
+  },
+  "SubmitOptions": {
+    "too_short": "回答が短すぎます",
+    "too_long": "回答が長すぎます",
+    "auth_fail": "認証に失敗しました。ログインして再試行してください",
+    "db_fail": "データベースエラーが発生しました。再度お試しください",
+    "ai_fail": "モデルエラーが発生しました。再度お試しください",
+    "too_may_request": "短時間にリクエストが多すぎます。少し待って再試行してください",
+    "no_level_selected": "評価レベルを選択する必要があります",
+    "custom_question_error": "質問が短すぎるか長すぎます",
+    "no_enough_points": "ポイントが不足しています",
+    "no_image_selected": "適切な画像ファイルを選択してください",
+    "too_big_image": "選択されたファイルが大きすぎます",
+    "upload_image_fail": "画像ファイルのアップロードに失敗しました。再度お試しください",
+    "common": "エラーが発生しました。しばらくしてから再試行してください"
+  },
+  "TaskReview": {
+    "answer_literal": "回答",
+    "review_data_error": "データエラーが発生しました。再度お試しください"
+  },
+  "LoginNotify": {
+    "login_notice": "この機能はログインが必要です",
+    "jump_notice": "{time}秒後に自動的にホームページに移動します"
+  },
+  "ContactPage": {
+    "commit_success": "送信完了。フィードバックありがとうございます",
+    "suggest": "フィードバック",
+    "send": "送信",
+    "mail_notice": "またはメールで送信"
+  },
+  "CustomPage": {
+    "unknown_error": "不明なエラーが発生しました。再度お試しください",
+    "create": "新規作成",
+    "record": "記録",
+    "no_record": "現在記録はありません。新しい問題を作成してください",
+    "select_level": "レベルを選択してください"
+  },
+  "CustomReviewPage": {
+  }
+}

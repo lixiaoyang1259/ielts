@@ -1,0 +1,158 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                  String                @id @default(cuid())
+  name                String?
+  username            String?
+  email               String?               @unique
+  emailVerified       DateTime?
+  image               String?
+  Session             Session[]
+  Account             Account?
+  password            String?
+  createdAt           DateTime              @default(now())
+  updatedAt           DateTime              @updatedAt
+  reset_password_code reset_password_code[]
+  ielts_record        ielts_record[]
+  payment             payment[]
+  point               Int                   @default(99) // 当前的point数, 创建后默认给99个点先
+  custom_question     custom_question[]
+  disabled            Boolean               @default(false)
+}
+
+model Account {
+  id                       String  @id @default(cuid())
+  userId                   String  @unique
+  type                     String
+  provider                 String
+  providerAccountId        String
+  refresh_token            String? @db.Text
+  access_token             String? @db.Text
+  expires_at               Int?
+  token_type               String?
+  scope                    String?
+  id_token                 String? @db.Text
+  session_state            String?
+  refresh_token_expires_in Int?
+  user                     User?   @relation(fields: [userId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // @@unique([provider, providerAccountId])
+  @@index([userId])
+}
+
+model Session {
+  id        String   @id
+  userId    String
+  expiresAt DateTime
+
+  user User @relation(references: [id], fields: [userId], onDelete: Cascade)
+}
+
+model verification_code {
+  id         String   @id @default(cuid())
+  code       String
+  email      String
+  createDate DateTime @default(now())
+}
+
+model reset_password_code {
+  id         String   @id @default(cuid())
+  tokenHash  String
+  userId     String
+  user       User     @relation(references: [id], fields: [userId], onDelete: Cascade)
+  createDate DateTime @default(now())
+}
+
+enum Part {
+  part1
+  part2
+}
+
+enum Type {
+  academic
+  general
+}
+
+model ielts_task {
+  id           Int            @id @default(autoincrement())
+  title        String?        @db.Text
+  part         Part
+  type         Type
+  time         Int            @db.Int
+  words        Int            @db.Int
+  question     String         @db.Text
+  image        String?        @db.VarChar(1000)
+  image_backup String?        @db.VarChar(1000) // 备份图床地址
+  model_answer String         @db.Text
+  records      ielts_record[] // 关联IELTS_RECORD表的外键
+  version      Int            @default(1)
+}
+
+model ielts_record {
+  id             Int        @id @default(autoincrement()) // 自增唯一ID
+  answer         String     @db.Text // 提交的答案
+  date           DateTime   @default(now()) // 提交日期，默认当前时间
+  score          Int        @default(-1) // 评分，-1 - 10，其中-1表示没有评分
+  review         String?    @db.Text // Json格式的评价详情
+  task_id        Int // 关联自表IELTS_TASK
+  task           ielts_task @relation(fields: [task_id], references: [id]) // 外键关联到IELTS_TASK的id字段
+  user_id        String // 用户id，来自表User的id字段
+  user           User       @relation(fields: [user_id], references: [id]) // 外键关联到User的id字段
+  version        Int        @default(1)
+  is_custom_task Boolean    @default(false)
+
+  @@index([task_id])
+  @@index([user_id])
+}
+
+model payment {
+  id       Int      @id @default(autoincrement()) // 自增唯一ID
+  point    Int // 消费点数 /+ -代表消费
+  date     DateTime @default(now()) // 消费时间
+  user_id  String // 用户ID
+  user     User     @relation(fields: [user_id], references: [id]) // 外键关联到User的id字段
+  source   String   @default("") // 消费没有渠道，充值才有
+  order_id String   @default("") // 消费目前不做订单，充值才有
+}
+
+model suggestion {
+  id      Int      @id @default(autoincrement()) // 自增唯一ID
+  date    DateTime @default(now()) // 时间
+  message String   @db.VarChar(2000) // 超过2000字符直接扔掉好了
+}
+
+model custom_question {
+  id         Int       @id @default(autoincrement())
+  date       DateTime  @default(now())
+  user_id    String
+  user       User      @relation(fields: [user_id], references: [id]) // 外键关联到User的id字段
+  question   String    @db.Text // 问题
+  images     String? // 问题相关图片的URL
+  level      String // 英语级别
+  answer     String    @db.Text // 答案
+  comments   String?   @db.Text // json格式的评价详情
+  score      Int       @default(-1) // 分数
+  reviewDate DateTime? // 评价时间
+  version    Int       @default(1)
+}
+
+model ocr_record {
+  md5 String @id
+  url String @db.Text
+}

@@ -1,0 +1,42 @@
+
+@mixin login_input{
+  margin-top: 7px;
+  height: 46px;
+  background: #FFFFFF;
+  border-radius: 8px 8px 8px 8px;
+  border: 2px solid #CACED6;
+  font-weight: 400;
+  font-size: 16px;
+  color: #172B4D;
+  line-height: 20px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+  padding : 0 12px;
+}
+
+@mixin login_input_focus{
+  border-color: #96BB7C;
+  outline-color: #96BB7C;;
+}
+
+@mixin login_button{
+  height: 46px;
+  background: #96BB7C;
+  border-radius: 3px 3px 3px 3px;
+  margin-top: 25px;
+  border:none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 20px;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+}
+
+@mixin x_center{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

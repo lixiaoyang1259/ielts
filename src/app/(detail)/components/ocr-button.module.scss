@@ -1,0 +1,25 @@
+@use "../common.module";
+.ocr_button {
+  @include common.button();
+  width: 136px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  margin-right: 26px;
+  justify-content: center;
+  &:hover{
+    background: #7BAB5A;
+  }
+
+  &::after{
+    content: "";
+    display: inline-block;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    background-image: url("/points.png");
+    background-size: cover;
+  }
+}

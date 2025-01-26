@@ -1,0 +1,25 @@
+@use "@/app/globals";
+
+.suggestion_list{
+  flex-grow: 1;
+  overflow-y: auto;
+  flex-basis: 100px;
+  font-size: 16px;
+
+  .overall_review{
+    word-break: break-word;
+    white-space: pre-wrap;
+    background: #FFFFFF;
+    border-radius: 8px 8px 8px 8px;
+    padding:16px;
+
+  }
+  .detail_review{
+    margin-top: 15px;
+    word-break: break-word;
+    white-space: pre-wrap;
+    background: #FFFFFF;
+    border-radius: 8px 8px 8px 8px;
+    padding:16px;
+  }
+}

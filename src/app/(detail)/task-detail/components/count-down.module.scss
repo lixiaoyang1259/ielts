@@ -1,0 +1,27 @@
+.countdown:before{
+  content: "";
+  background: url("/arrow.svg");
+  background-size: cover;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transform: rotate(90deg);
+}
+.countdown_close{
+  @extend .countdown;
+}
+.countdown_close::before{
+  @extend .countdown,:before;
+  transform: rotate(-90deg);
+}
+.countdown{
+  display: flex;
+  align-items: center;
+  color:#4583ED;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+}
+.countdown_over{
+  color : red;
+}

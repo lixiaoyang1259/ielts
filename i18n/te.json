@@ -1,0 +1,153 @@
+{
+  "LoginPage": {
+    "login_welcome": "欢迎",
+    "password_format": "密码需要至少6位",
+    "forgot_password": "没有账号或者忘记密码?",
+    "sign_in": "登录",
+    "common_login_error": "登录发生了一点错误，请稍后重试",
+    "email_existed": "绑定的邮件地址已经使用其他方式注册，请更换其他方式登录",
+    "access_denied_g": "Google一键登录出现问题，请稍后重试",
+    "access_denied_h": "Github一键登录出现问题，请稍后重试",
+    "access_denied_c": "{provider}一键登录出现问题，请稍后重试"
+  },
+  "RegisterPage": {
+    "register_now": "注册",
+    "continue": "继续",
+    "verify_mail_notice": "如果邮箱已注册，会进入找回密码流程"
+  },
+  "ConfirmPage": {
+    "email_notice": "验证码邮件已发送，请登录邮件查收, 如果未收到请检查所有收件箱，包括垃圾邮件",
+    "count_down": "{count}秒后会返回首页"
+  },
+  "PasswordPage": {
+    "set_password": "请设置密码",
+    "first_password": "密码",
+    "second_password": "请再次输入密码",
+    "continue": "继续",
+    "input_your_password": "请输入密码",
+    "password_format": "密码需要6-20位",
+    "finished": "注册马上完成",
+    "different_password": "两次输入密码不一致",
+    "code_or_link_error": "验证码失效，请重新注册流程",
+    "common_password_error": "密码设置错误，请稍后重试"
+  },
+  "MainMenu": {
+    "main": "首页",
+    "ielts": "雅思题目",
+    "records": "历史记录",
+    "custom": "自定义题目",
+    "contact": "联系我们",
+    "remaining_points": "可用点数",
+    "logout": "退出登录"
+  },
+  "MainPage": {
+    "promotion_info": "AI批改实时反馈，提升英语写作能力.公测期间登录免费获得价值99CNY的批改点数",
+    "get_point": "马上获取",
+    "username_placeholder": "登录",
+    "signup": "注册",
+    "left_T1": "高级英语写作智能检查工具",
+    "left_T2": "学术类和培训类",
+    "left_T3": "使用我们的专业AI引擎，为您的写作提供即时、详细、高质量的反馈和表现评估。",
+    "left_start_button": "免费开始使用",
+    "line2_title": "谁能从我们的平台中受益？",
+    "left_title": "学生和职场人士",
+    "line2_left_text_li1": "来自韩国、泰国、中国、越南等国家的毕业生，旨在前往美国、英国、加拿大、澳洲等地进一步提升学历。",
+    "line2_left_text_li2": "寻求到英语国家工作的求职者和希望提升职业机会的专业人士。",
+    "line2_right_title": "教师和机构",
+    "line2_right_text_li1": "希望为学生提供先进的自我评估和自学工具的学校英语教学及雅思备考老师。",
+    "line2_right_text_li2": "希望通过提升英语写作教学效率，升级其英语课程水平的语言学校和其他教学组织。",
+    "line3_right_title": "用户评价",
+    "line3_right_demo1": "感谢这个网站的AI写作导师，我的雅思写作成绩从5.0提高到了6.0！每次提交后，我都会收到详细的反馈和建议，帮助我发现弱点并快速进步！",
+    "line3_right_name1": "- Nguyễn Thị Linh，雅思考生",
+    "line3_right_demo2": "这个网站非常棒！AI不仅提供准确的评分，还给出个性化的提升建议。用了几周后，我的写作技巧和词汇量明显提高了。强烈推荐给任何雅思备考者！",
+    "line3_right_name2": "- Aisyah Binti Ahmad，雅思考生",
+    "line4_main_title": "为什么选择我们？",
+    "line4_left_title": "了解您的分数段",
+    "line4_left_content": "基于官方评分标准的真实分数估算：语法、任务完成度、连贯与衔接、词汇资源。",
+    "line4_middle_title": "详细反馈",
+    "line4_middle_content": "为您的写作提供综合性反馈。我们的AI算法理解您的回答在雅思考官眼中的准确性与连贯性。",
+    "line4_right_title": "免费的练习机会",
+    "line4_right_content":"每天练习并在仪表板中跟踪您的进度。享受随时随地可用的终极雅思作文批改服务，全天候 24/7 为您服务。"
+     },
+  "IeltsPage": {
+    "tasks": "题目",
+    "no_task": "当前条件下没有没有可用题目， 请切换筛选条件重试"
+  },
+  "TaskFilter": {
+    "type": "类型",
+    "part": "part",
+    "academic": "academic",
+    "general": "general",
+    "part1": "Part1",
+    "part2": "Part2",
+    "submit": "提交"
+  },
+  "RecordPage": {
+    "record": "记录",
+    "average_score": "近期均分",
+    "exceptions": "发生了一点小错误,请稍后重试",
+    "no_record": "当前还没有答题记录，从任务列表中选择一个进行吧。"
+  },
+  "TaskDetail": {
+    "start": "开始",
+    "input_hint": "建议回答不少于{words}单词"
+  },
+  "EssayOptions": {
+    "save": "保存",
+    "save_title": "请确认是否保存",
+    "save_content": "停止答题并保存答案，后续可以在答题记录内提交批改",
+    "submit": "提交",
+    "submit_title": "请确认是否提交",
+    "submit_content": "提交并获取批改结果，需要消耗 1 点。目前你有 {points} 点可用",
+    "insufficient_point_title": "点数不足",
+    "insufficient_point_content": "剩余点数不足以提交，请充值点数",
+    "confirm_cancel": "取消",
+    "confirm_ok": "确定",
+    "ocr_button": "OCR",
+    "select_ok": "确定",
+    "ocr_title": "图片选择",
+    "ocr_content": "图片格式为PNG/JPG，尺寸不能超过2M. 使用OCR需要支付1个点数, 目前你有 {points} 点可用",
+    "select_cancel": "取消",
+    "no_file_select": "没有选中的文件",
+    "ocr_error": "文本识别失败，请使用更清晰的文件尝试"
+  },
+  "SubmitOptions": {
+    "too_short": "答案太短",
+    "too_long": "答案过长",
+    "auth_fail": "鉴权失败，请登录后重试",
+   "db_fail": "数据库错误，如果持续出现请反馈",
+    "ai_fail": "模型错误，如果持续出现请反馈",
+   "too_may_request": "短时间内请求过多，请稍后重试",
+    "no_level_selected": "需要选择一个评分等级",
+    "custom_question_error": "问题输入过短或过长",
+    "no_enough_points": "剩余点数不足",
+    "no_image_selected": "需要选择正确的图片文件",
+   "too_big_image": "选择的文件过大",
+    "upload_image_fail": "上传图片文件失败，请稍后重试",
+    "common": "发生了一点错误，稍后重试"
+
+  },
+  "TaskReview": {
+    "answer_literal": "Answer",
+    "review_data_error": "数据错误，如果持续出现请联系我们"
+  },
+  "LoginNotify": {
+    "login_notice": "本功能需要登录",
+    "jump_notice": "{time}秒后自动跳转到首页"
+  },
+  "ContactPage": {
+    "commit_success": "提交成功，感谢反馈",
+    "suggest": "反馈",
+    "send": "提交",
+    "mail_notice": "或发送邮件到"
+  },
+  "CustomPage": {
+    "unknown_error": "未知错误，请稍后重试",
+    "create": "新建",
+    "record": "记录",
+    "no_record": "当前无答题记录，新建一个题目吧",
+    "select_level": "请选择一个等级"
+  },
+  "CustomReviewPage": {
+  }
+}

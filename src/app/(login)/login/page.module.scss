@@ -1,0 +1,109 @@
+@use "../login.module";
+.main_container {
+  width: 520px;
+  height: 578px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 400px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px 0px rgba(9,30,66,0.25);
+  border-radius: 4px 4px 4px 4px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top:120px;
+}
+
+$form_width: 388px;
+
+.welcome {
+  margin-top:50px;
+  font-weight: bold;
+  font-size: 32px;
+  color: #172B4D;
+  line-height: 24px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 388px;
+
+  .input_label {
+    font-weight: 400;
+    font-size: 16px;
+    color: #172B4D;
+    line-height: 20px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+    margin-top: 25px;
+  }
+
+  .input {
+    @include login.login_input();
+  }
+  .input:focus{
+    @include login.login_input_focus();
+  }
+
+  .forgot_password {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #538DEF;
+    line-height: 20px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+  }
+
+  .sign_in {
+    @include login.login_button();
+  }
+}
+
+
+.split_line {
+  margin-top: 30px;
+  display: block;
+  border-top: 1px solid #BBBBBB;
+  width: $form_width;
+  position: relative;
+}
+
+.or {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+  font-size: 14px;
+  font-family: "PingFang SC", serif;
+  color: #BBBBBB;
+  background: white;
+  width: 20px;
+  text-align: center;
+}
+
+.notice {
+  margin-top: 25px;
+  font-size: 14px;
+  font-family: "PingFang SC", serif;
+  color: #BBBBBB;
+  width: 388px;
+  text-align: center;
+}
+
+.oauth_button_group {
+  display: flex;
+  flex-direction: row;
+  width: $form_width;
+  margin-top: 40px;
+  justify-content: space-around;
+}

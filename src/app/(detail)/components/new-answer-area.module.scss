@@ -1,0 +1,117 @@
+@mixin button {
+  background: #96BB7C;
+  border-radius: 5px 5px 5px 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  font-style: normal;
+}
+
+.main_container {
+  min-height: calc(100vh - 160px);
+  background: #F4FFF1;
+  border-radius: 8px 8px 8px 8px;
+  position: relative;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+
+  .title_line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .answer_title {
+      font-weight: bolder;
+      font-size: 18px;
+      color: #172B4D;
+      line-height: 18px;
+      text-align: left;
+      font-style: normal;
+      text-transform: none;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        margin-right: 12px;
+        width: 10px;
+        height: 33px;
+        background: #96BB7C;
+        border-radius: 10px 10px 10px 10px;
+      }
+    }
+
+  }
+
+  .start_button {
+    @include button();
+    width: 103px;
+    height: 46px;
+    line-height: 46px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    &:hover{
+      background: #7BAB5A;
+    }
+  }
+
+  .answer_area {
+    flex-grow: 1;
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    padding: 15px;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 8px 8px 8px 8px;
+    border: 2px solid #96BB7C;
+
+    .input_area {
+      flex-grow: 1;
+      appearance: none;
+      resize: none;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      padding: 10px;
+    }
+
+    .word_counter {
+      align-self: end;
+      font-weight: 400;
+      font-size: 18px;
+      color: #172B4D;
+      line-height: 18px;
+      text-align: left;
+      font-style: normal;
+      text-transform: none;
+    }
+  }
+
+  .options_line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 16px;
+
+    .save_button {
+      width: 87px;
+      height: 40px;
+      line-height: 40px;
+      @include button();
+      font-size: 16px;
+      margin-right: 26px;
+    }
+
+
+  }
+}
+.main_container_started_background{
+  background: #FFFFFF;
+}

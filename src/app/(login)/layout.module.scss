@@ -1,0 +1,13 @@
+.page_container{
+  display: flex;
+  min-height: 1024px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background: linear-gradient( 63deg, #94D864 0%, #2FBDE7 100%);
+  border-radius: 0 0 0 0;
+  .language_btn{
+    position: absolute;
+    left: 70vw;
+    margin-top: 80px;
+  }
+}

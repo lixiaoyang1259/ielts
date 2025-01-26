@@ -1,0 +1,25 @@
+@use "../layout.module";
+
+.main_container_fold{
+
+  //width: calc(100vw + 260px);
+  //transform: translateX(-260px);
+}
+
+.main_container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: #EEEEF0;
+  padding: 20px 120px 20px 120px;
+  min-height: calc(100vh - 100px);
+
+  .question_area {
+    margin-right: 20px;
+  }
+
+  .answer_container {
+    flex-grow: 1;
+  }
+}
+

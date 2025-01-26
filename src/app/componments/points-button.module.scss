@@ -1,0 +1,23 @@
+.point_button {
+  width: 80px;
+  height: 35px;
+  background: #E6E6E6;
+  border-radius: 80px 80px 80px 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-right: 20px;
+  .point_icon {
+    width: 20px;
+    height: 20px;
+    margin : 0 10px;
+  }
+  .point_count{
+    font-weight: 400;
+    font-size: 16px;
+    color: #172B4D;
+    line-height: 18px;
+    font-style: normal;
+  }
+}

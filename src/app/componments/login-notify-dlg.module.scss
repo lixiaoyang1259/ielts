@@ -1,0 +1,24 @@
+.main_container{
+  width: 100vw;
+  height: 100vh;
+  background: #9F9F9FDD;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .dlg_container{
+    font-size: 1.2rem;
+    width: 400px;
+    height: 200px;
+    line-height: 200px;
+    background: #EEEEEE;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #BBBBBB;
+    text-align: center;
+    color: #9F9F9F;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

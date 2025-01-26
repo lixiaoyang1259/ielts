@@ -1,0 +1,23 @@
+.tips_content {
+  background: #FEFAE3;
+  width: 100vw;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1rem;
+  position: fixed;
+  top: -70px;
+}
+
+.pull_in {
+  transition-duration: 500ms;
+  transition-property: top;
+  top: 0;
+}
+
+.pull_out {
+  transition-duration: 500ms;
+  transition-property: top;
+  top: -70px;
+}
+

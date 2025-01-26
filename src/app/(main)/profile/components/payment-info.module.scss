@@ -1,0 +1,25 @@
+.main_container{
+  display: flex;
+  flex-direction: column;
+
+  .payment_literal{
+    color: #6B778C;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .point_title{
+    color: #172B4D;
+    font-size: 1.0rem;
+    font-weight: bold;
+    margin-top : 25px;
+  }
+  .current_point{
+    margin-top: 15px;
+    color: #172B4D;
+    font-size: 0.8rem;
+    font-weight: normal;
+  }
+
+}
+

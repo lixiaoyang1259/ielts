@@ -1,0 +1,21 @@
+
+.illegal_answer{
+
+}
+.review_container{
+  overflow-y: auto;
+  flex-basis: 100px;
+  flex-grow: 1;
+  font-size: 16px;
+  .comment{
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .suggestion{
+    margin-top: 12px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 16px;
+  }
+}

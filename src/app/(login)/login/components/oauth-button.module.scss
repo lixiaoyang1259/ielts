@@ -1,0 +1,18 @@
+
+.oauth_logo{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  font-size: 25px;
+  transform: translate(-50%, -50%);
+}
+
+.oauth_button{
+  width: 60px;
+  height: 60px;
+  border: 1px solid #BBBBBB;
+  border-radius: 50%;
+}
+.oauth_button:hover{
+  background: #EDF2F7;
+}

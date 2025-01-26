@@ -1,0 +1,86 @@
+@mixin literal_text{
+  color: #172B4D;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top : 40px;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  .main_title_literal {
+    color: #6B778C;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .account_info_literal {
+    @include literal_text();
+  }
+
+  .userInfo_line {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+    .info_module {
+      display: flex;
+      flex-direction: column;
+      label {
+        color: #172B4D;
+        font-size: 15px;
+        font-weight: normal;
+      }
+
+      input {
+        height: 30px;
+        width: 280px;
+        margin-top:10px;
+        margin-right: 30px;
+        padding:{
+          left: 5px;
+          right: 5px;
+        };
+        color: #9A9A9A;
+        font-size: 15px;
+        font-weight: normal;
+        border: 1px solid #BBBBBB;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .ielts_type_literal {
+    @include literal_text();
+    margin-bottom: 30px;
+  }
+
+  .type_input {
+    color: #9A9A9A;
+    font-size: 15px;
+    font-weight: normal;
+    margin-right: 5px;
+  }
+
+  .type_label {
+    color: #9A9A9A;
+    font-size: 15px;
+    font-weight: normal;
+    margin-right: 15px;
+  }
+
+  .apply_button {
+    margin-top: 40px;
+    display: block;
+    font-size: 15px;
+    color: #DDDDDD;
+    background: #0052CC;
+    border: none;
+    border-radius: 15px;
+    width: 80px;
+    height: 30px;
+  }
+
+}

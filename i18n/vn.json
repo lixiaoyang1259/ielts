@@ -1,0 +1,152 @@
+{
+  "LoginPage": {
+    "login_welcome": "Chào mừng",
+    "password_format": "Mật khẩu cần ít nhất 6 ký tự",
+    "forgot_password": "Chưa có tài khoản hoặc quên mật khẩu?",
+    "sign_in": "Đăng nhập",
+    "common_login_error": "Đã xảy ra lỗi trong quá trình đăng nhập. Vui lòng thử lại sau.",
+    "email_existed": "Email này đã được đăng ký bằng phương thức khác. Vui lòng đăng nhập bằng phương thức khác.",
+    "access_denied_g": "Có sự cố xảy ra với đăng nhập Google một chạm. Vui lòng thử lại sau.",
+    "access_denied_h": "Có sự cố xảy ra với đăng nhập GitHub một chạm. Vui lòng thử lại sau.",
+    "access_denied_c": "Có sự cố xảy ra với đăng nhập {provider} một chạm. Vui lòng thử lại sau."
+  },
+  "RegisterPage": {
+    "register_now": "Đăng ký",
+    "continue": "Tiếp tục",
+    "verify_mail_notice": "Nếu email đã đăng ký, sẽ vào quá trình khôi phục mật khẩu"
+  },
+  "ConfirmPage": {
+    "email_notice": "Email chứa mã xác nhận đã được gửi, vui lòng kiểm tra hộp thư của bạn, nếu không nhận được hãy kiểm tra tất cả hộp thư, kể cả thư rác",
+    "count_down": "{count} giây sau sẽ trở về trang chủ"
+  },
+  "PasswordPage": {
+    "set_password": "Vui lòng đặt mật khẩu",
+    "first_password": "Mật khẩu",
+    "second_password": "Nhập lại mật khẩu",
+    "continue": "Tiếp tục",
+    "input_your_password": "Vui lòng nhập mật khẩu",
+    "password_format": "Mật khẩu cần từ 6-20 ký tự",
+    "finished": "Đăng ký sắp hoàn tất",
+    "different_password": "Hai lần nhập mật khẩu không khớp",
+    "code_or_link_error": "Mã xác nhận không hợp lệ, vui lòng thực hiện lại quy trình đăng ký",
+    "common_password_error": "Lỗi đặt mật khẩu, vui lòng thử lại sau"
+  },
+  "MainMenu": {
+    "main": "Trang chủ",
+    "ielts": "Đề thi IELTS",
+    "records": "Lịch sử",
+    "custom": "Đề tùy chỉnh",
+    "contact": "Liên hệ với chúng tôi",
+    "remaining_points": "Điểm khả dụng",
+    "logout": "Đăng xuất"
+  },
+  "MainPage": {
+    "promotion_info": "AI chấm điểm và phản hồi theo thời gian thực, nâng cao kỹ năng viết tiếng Anh của bạn. Trong thời gian thử nghiệm công khai, hãy đăng nhập để nhận điểm chấm trị giá 350000VND miễn phí",
+    "get_point": "Nhận ngay",
+    "username_placeholder": "Đăng nhập",
+    "signup": "Đăng ký",
+    "left_T1": "Công cụ kiểm tra viết tiếng Anh thông minh cao cấp",
+    "left_T2": "Học thuật và đào tạo",
+    "left_T3": "Sử dụng công cụ AI chuyên nghiệp của chúng tôi để cung cấp cho bài viết của bạn phản hồi chi tiết và đánh giá chất lượng cao theo thời gian thực.",
+    "left_start_button": "Bắt đầu miễn phí",
+    "line2_title": "Ai có thể hưởng lợi từ nền tảng của chúng tôi?",
+    "left_title": "Học sinh và người đi làm",
+    "line2_left_text_li1": "Sinh viên từ Hàn Quốc, Thái Lan, Trung Quốc, Việt Nam và các nước khác muốn nâng cao trình độ tại Hoa Kỳ, Anh, Canada, Úc và các nước khác.",
+    "line2_left_text_li2": "Các chuyên gia và ứng viên tìm kiếm cơ hội nghề nghiệp tại các quốc gia nói tiếng Anh.",
+    "line2_right_title": "Giáo viên và tổ chức",
+    "line2_right_text_li1": "Giáo viên tiếng Anh và giáo viên luyện thi IELTS muốn cung cấp cho học sinh các công cụ tự đánh giá và tự học tiên tiến.",
+    "line2_right_text_li2": "Trường ngôn ngữ và các tổ chức giáo dục khác muốn cải thiện hiệu quả giảng dạy viết tiếng Anh và nâng cấp các khóa học tiếng Anh của mình.",
+    "line3_right_title": "Nhận xét của người dùng",
+    "line3_right_demo1": "Cảm ơn trang web này và người hướng dẫn viết AI của nó, điểm viết IELTS của tôi đã tăng từ 5.0 lên 6.0! Sau mỗi lần nộp bài, tôi nhận được phản hồi chi tiết và lời khuyên giúp tôi nhận ra điểm yếu và tiến bộ nhanh chóng!",
+    "line3_right_name1": "- Nguyễn Thị Linh, thí sinh IELTS",
+    "line3_right_demo2": "Trang web này rất tuyệt! AI không chỉ cung cấp điểm số chính xác mà còn đưa ra những gợi ý cải thiện cá nhân hóa. Sau vài tuần, kỹ năng viết và từ vựng của tôi đã được cải thiện đáng kể. Rất khuyến khích cho bất kỳ ai đang chuẩn bị IELTS!",
+    "line3_right_name2": "- Aisyah Binti Ahmad, thí sinh IELTS",
+    "line4_main_title": "Tại sao chọn chúng tôi?",
+    "line4_left_title": "Hiểu rõ điểm số của bạn",
+    "line4_left_content": "Ước tính điểm thực tế dựa trên tiêu chuẩn đánh giá chính thức: Ngữ pháp, Hoàn thành nhiệm vụ, Tính liên kết và Tài nguyên từ vựng.",
+    "line4_middle_title": "Phản hồi chi tiết",
+    "line4_middle_content": "Cung cấp phản hồi toàn diện cho bài viết của bạn. Thuật toán AI của chúng tôi hiểu sự chính xác và mạch lạc trong câu trả lời của bạn qua con mắt của giám khảo IELTS.",
+    "line4_right_title": "Cơ hội luyện tập miễn phí",
+    "line4_right_content": "Luyện tập hàng ngày và theo dõi tiến trình của bạn trên bảng điều khiển. Thưởng thức dịch vụ chấm điểm bài viết IELTS mọi lúc mọi nơi, phục vụ 24/7."
+  },
+  "IeltsPage": {
+    "tasks": "Đề bài",
+    "no_task": "Không có đề bài nào khả dụng với điều kiện hiện tại, vui lòng thay đổi bộ lọc và thử lại"
+  },
+  "TaskFilter": {
+    "type": "Loại",
+    "part": "Phần",
+    "academic": "Học thuật",
+    "general": "Tổng quát",
+    "part1": "Phần 1",
+    "part2": "Phần 2",
+    "submit": "Gửi"
+  },
+  "RecordPage": {
+    "record": "Lịch sử",
+    "average_score": "Điểm trung bình gần đây",
+    "exceptions": "Có lỗi xảy ra, vui lòng thử lại sau",
+    "no_record": "Hiện chưa có bản ghi câu trả lời nào, hãy chọn một đề từ danh sách nhiệm vụ để bắt đầu."
+  },
+  "TaskDetail": {
+    "start": "Bắt đầu",
+    "input_hint": "Đề xuất trả lời không ít hơn {words} từ"
+  },
+  "EssayOptions": {
+    "save": "Lưu",
+    "save_title": "Xác nhận lưu",
+    "save_content": "Dừng trả lời và lưu câu trả lời, bạn có thể nộp để chấm điểm trong lịch sử câu trả lời sau.",
+    "submit": "Nộp",
+    "submit_title": "Xác nhận nộp",
+    "submit_content": "Nộp bài và nhận kết quả chấm điểm, tiêu tốn 1 điểm. Bạn hiện có {points} điểm",
+    "insufficient_point_title": "Điểm không đủ",
+    "insufficient_point_content": "Số điểm còn lại không đủ, vui lòng nạp thêm điểm",
+    "confirm_cancel": "Hủy",
+    "confirm_ok": "Xác nhận",
+    "ocr_button": "OCR",
+    "select_ok": "Xác nhận",
+    "ocr_title": "Chọn ảnh",
+    "ocr_content": "Chỉ nhận ảnh định dạng PNG/JPG, kích thước không vượt quá 2MB. Dùng OCR tiêu tốn 1 điểm, bạn hiện có {points} điểm",
+    "select_cancel": "Hủy",
+    "no_file_select": "Chưa chọn tệp",
+    "ocr_error": "Nhận dạng văn bản thất bại, vui lòng dùng tệp rõ ràng hơn"
+  },
+  "SubmitOptions": {
+    "too_short": "Câu trả lời quá ngắn",
+    "too_long": "Câu trả lời quá dài",
+    "auth_fail": "Xác thực thất bại, vui lòng đăng nhập và thử lại",
+    "db_fail": "Lỗi cơ sở dữ liệu, nếu vẫn tiếp tục vui lòng báo lỗi",
+    "ai_fail": "Lỗi mô hình, nếu vẫn tiếp tục vui lòng báo lỗi",
+    "too_may_request": "Yêu cầu quá nhiều trong thời gian ngắn, vui lòng thử lại sau",
+    "no_level_selected": "Vui lòng chọn một mức đánh giá",
+    "custom_question_error": "Câu hỏi quá ngắn hoặc quá dài",
+    "no_enough_points": "Điểm không đủ",
+    "no_image_selected": "Cần chọn tệp ảnh hợp lệ",
+    "too_big_image": "Kích thước tệp quá lớn",
+    "upload_image_fail": "Tải lên ảnh thất bại, vui lòng thử lại sau",
+    "common": "Có lỗi xảy ra, vui lòng thử lại sau"
+  },
+  "TaskReview": {
+    "answer_literal": "Câu trả lời",
+    "review_data_error": "Lỗi dữ liệu, nếu vẫn tiếp tục vui lòng liên hệ chúng tôi"
+  },
+  "LoginNotify": {
+    "login_notice": "Chức năng này yêu cầu đăng nhập",
+    "jump_notice": "{time} giây nữa sẽ tự động chuyển đến trang chủ"
+  },
+  "ContactPage": {
+    "commit_success": "Gửi thành công, cảm ơn phản hồi của bạn",
+    "suggest": "Phản hồi",
+    "send": "Gửi",
+    "mail_notice": "hoặc gửi email đến"
+  },
+  "CustomPage": {
+    "unknown_error": "Lỗi không xác định, vui lòng thử lại sau",
+    "create": "Tạo mới",
+    "record": "Lịch sử",
+    "no_record": "Hiện chưa có lịch sử câu trả lời, tạo một câu hỏi mới ngay",
+    "select_level": "Vui lòng chọn một mức độ"
+  },
+  "CustomReviewPage": {
+  }
+}

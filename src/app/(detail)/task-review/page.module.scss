@@ -1,0 +1,106 @@
+@use "../layout.module";
+@use "@/app/globals";
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 60px);
+  background: #EEEEF0;
+  padding: 0 120px;
+
+  .question_area {
+    margin-top: 26px;
+  }
+
+  .content_area {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .answer_area {
+      .answer_literal {
+        font-weight: bold;
+        font-size: 18px;
+        color: #172B4D;
+        line-height: 18px;
+        text-align: left;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          margin-right: 12px;
+          width: 10px;
+          height: 33px;
+          background: #96BB7C;
+          border-radius: 10px 10px 10px 10px;
+        }
+
+        & > div {
+          margin-left: 26px;
+        }
+      }
+
+      .answer_content {
+        margin-top: 16px;
+        min-width: 750px;
+        background: #FFFFFF;
+        border-radius: 8px 8px 8px 8px;
+        padding: 26px;
+        font-size: 16px;
+        white-space: pre-wrap;
+        min-height: calc(100vh - 400px);
+      }
+
+      & :global(.answer_content_error) {
+        color:#E34F48
+      }
+
+      & :global(.answer_content_warn) {
+        color:#F18F46
+      }
+
+      & :global(.answer_content_tips) {
+
+        color:#68ba5b
+      }
+    }
+
+    .review_area {
+      margin-left: 16px;
+
+      .score_title {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: #172B4D;
+        line-height: 18px;
+        text-align: left;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          margin-right: 12px;
+          width: 10px;
+          height: 33px;
+          background: #96BB7C;
+          border-radius: 10px 10px 10px 10px;
+        }
+      }
+
+      .review_list {
+        margin-top: 16px;
+        min-width: 430px;
+        border-radius: 8px 8px 8px 8px;
+        max-height: calc(100vh - 350px);
+        overflow-y: auto;
+      }
+
+    }
+  }
+}
